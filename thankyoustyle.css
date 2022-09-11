@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+    font-family: consolas;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 50px 30px;
+    color: #f0f0f0;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 50px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: transparent;
+    border: none;
+}
+
+.btn:hover {
+    font-size: 0;
+    color: #fefefe;
+    background: #FF7522;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #FF7522, 0 0 40px #f1f1f1, 0 0 80px #f0f0f0;
+}
+
+.btn:hover::after {
+    font-size: 30px;
+    content: attr(data-hover);
+}
