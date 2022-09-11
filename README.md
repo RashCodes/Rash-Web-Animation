@@ -1,1 +1,3 @@
 # Rash-Web-Animation
+small web animation for having fun
+LETS TRY....
